@@ -1,0 +1,26 @@
+{
+  "name": "k-i-m",
+  "version": "0.0.0",
+  "author": {
+    "name": "Kyebego",
+    "url": "https://go.KIBI.family/"
+  },
+  "license": "GPL-3.0-or-later",
+  "description": "Kixt Input Methods",
+  "homepage": "https://github.com/ki-t-e/KIM#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ki-t-e/KIM.git"
+  },
+  "bugs": "https://github.com/ki-t-e/KIM/issues",
+  "directories": {
+    "lib": "./"
+  },
+  "browser": "index.js",
+  "scripts": {
+    "prepare": "cake build"
+  },
+  "devDependencies": {
+    "cson": "^5.1.0"
+  }
+}
