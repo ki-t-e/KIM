@@ -18,8 +18,10 @@ Sources are given in [CSON (CoffeeScript Object Notation)](https://github.com/be
 ### Overall Structure
 
 ```coffee
+name: "KiBoard Input Method" # String name
+charset: "example:charset" # Charset URI, or an array thereof
 actions:
-	actionsForStates... # Values may be any key value
+	actionsForStates... # Values must be actions
 keyMaps: [ # Array of key maps
 ]
 terminators:
@@ -68,3 +70,9 @@ Shift: # Boolean
 ```
 
 If a modifier is not present, then the key map applies regardless of whether the given key is pressed.
+
+### Actions
+
+Actions must be given as an object mapping states to values.
+Actions should have one key which is the empty string, which is the default value.
+Values may be any possible value for a key.

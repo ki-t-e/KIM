@@ -1,3 +1,5 @@
+name: "https://kite.KIBI.network/KIM/QWERTY"
+charset: "https://charset.KIBI.network/Kixt/ASCII"
 keyMaps: [
 	{
 		modifiers:
@@ -115,22 +117,27 @@ keyMaps: [
 		Slash: "?"
 		IntlRo: "?"
 	}, {
-		NumpadMultiply: "*"
 		Space: " "
+		NumpadEqual: "="
+		NumpadParenLeft: "("
+		NumpadParenRight: ")"
+		NumpadDivide: "/"
+		NumpadMultiply: "*"
+		NumpadSubtract: "-"
 		Numpad7: "7"
 		Numpad8: "8"
 		Numpad9: "9"
-		NumpadSubtract: "-"
+		NumpadAdd: "+"
 		Numpad4: "4"
 		Numpad5: "5"
 		Numpad6: "6"
-		NumpadAdd: "+"
+		NumpadComma: ","
 		Numpad1: "1"
 		Numpad2: "2"
 		Numpad3: "3"
+		NumpadStar: "*"
 		Numpad0: "0"
+		NumpadHash: "#"
 		NumpadDecimal: "."
-		NumpadEqual: "="
-		NumpadComma: ","
 	}
 ]
