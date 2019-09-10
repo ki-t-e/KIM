@@ -1,0 +1,32 @@
+# This keymap maps a number of commonly-used controls to keyboard characters, for easier input in interactive applications which do not require text keyboard input.
+# The arrow keys are mapped to IJKL and the various messages are mapped to QAZSXWUO;.
+# BOOT, RESUME, PAUSE, and HALT are mapped to the digits 1 through 4, but only when the Shift key is held.
+
+# Note that on a KiBoard, these controls are also hardcoded into the function (Escape; F1–F9) and arrow keys.
+
+name: "https://kite.KIBI.network/KIM/Controller"
+charset: "https://charset.KIBI.network/Kixt/Controls"
+keyMaps: [
+	{
+		KeyI: "\u80DA" # RETRACT [UP] (= ArrowUp)
+		KeyJ: "\b" # BACK [LEFT] (= ArrowLeft)
+		KeyK: "\n" # ADVANCE [DOWN] (= ArrowDown)
+		KeyL: "\u80D8" # FORWARD [RIGHT] (= ArrowRight)
+		KeyQ: "\x1B\x7F" # COMMAND [SELECT (-)] (= Escape)
+		KeyA: "\x05\x7F" # ENQUIRY [MENU (X)] (= F1)
+		KeyZ: "\x06\x7F" # CONFIRM [ACCEPT (A)] (= F2)
+		KeyS: "\x07\x7F" # ALERT [ACTION (Y)] (= F3)
+		KeyX: "\x15\x7F" # ERROR [CANCEL (B)] (= F4)
+		KeyW: "\u80CA\x7F" # APPLICATION COMMAND [START (+)] (= F9)
+# The following commands might be intercepted before they reach the application level, so caution should be exercised in their use in applications:
+		KeyU: "\u80CB\x7F" # USER COMMAND [TRIGGER (L)] (= F10)
+		KeyO: "\u80CC\x7F" # OPERATING SYSTEM COMMAND [MODE (R)] (= F11)
+		Semicolon: "\u80CD\x7F" # DEVICE COMMAND [TARGET (Z)] (= F12)
+	}, {
+		modifiers: { Shift: yes }
+		Digit1: "\x11" # BOOT [REBOOT]
+		Digit2: "\x12" # RESUME [RESUME]
+		Digit3: "\x13" # PAUSE [WAIT]
+		Digit4: "\x14" # HALT [END]
+	}
+]
